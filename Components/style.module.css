@@ -1,0 +1,28 @@
+.textAreaCode{
+    width: 200px;
+    height: 300px;
+}
+.iframeCodeArea{
+    width: 98%;
+    height: 24.5rem;
+}
+
+.iframeCodeTitle{
+    width: 250px;
+    height: 3rem;
+    border-top-left-radius: var(--borderRadiusIframeTitle);
+    border-top-right-radius: var(--borderRadiusIframeTitle);
+    position:relative;
+    top:4px;
+    background-color:rgb(143, 143, 151);
+    color:white;
+}
+
+.containerEditor{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: stretch;
+    flex-direction: row;
+}

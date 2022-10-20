@@ -1,0 +1,13 @@
+:root{
+    --borderRadiusIframeTitle:10%;
+}
+
+button{
+    border:1px solid black;
+    border-radius: 20%;
+    padding:0.65rem;
+    margin-bottom:0.5rem;
+    background-color: rgb(129, 52, 201);
+    color:white;
+    cursor: pointer;
+}

@@ -1,16 +1,12 @@
-import { useState } from "react";
+import style  from './style.module.css';
 
 export default function IFrameContext(props){
     return(
         <>
-        <iframe srcDoc={props.html.split("<title>")[1].split("</title>")[0]} style={{
-                width: '250px',
-                height: '3rem'
-            }}/>
-            <iframe srcDoc={props.html} style={{
-                width: '100%',
-                height: '33rem'
-            }}/>
+        <iframe srcDoc={
+            `<div style="color:white;text-align:center;">${props.html.split("<title>")[1].split("</title>")[0]}</div>`
+            } className={style.iframeCodeTitle}/>
+            <iframe srcDoc={props.html} className={style.iframeCodeArea}/>
         </>
     )
 

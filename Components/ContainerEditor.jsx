@@ -1,6 +1,7 @@
 import { useState } from "react";
 import IFrameContext from "./IFrameContext";
 import TextIframe from "./TextIframe";
+import style from './style.module.css'
 
 export default function ContainerFrame() {
 
@@ -10,7 +11,7 @@ export default function ContainerFrame() {
             <title>Page Title</title>
         </head>
         <body>
-            
+        \t
         </body>
     </html>`);
 
@@ -55,7 +56,7 @@ export default function ContainerFrame() {
                 <style>${css}</style>${fusionTempCss.split("</body>")[0]}
                 <script>${js}</script>
                     ${fusionTempJS}
-                `.trim());
+                `);
     }
 
     return (
@@ -64,21 +65,22 @@ export default function ContainerFrame() {
             <button onClick={FusionElements}>
                 Run
             </button>
+            <h1>Editor Web</h1>
         </div>
-            <div id="editor" style={{display:"flex"}}>
+            <div id="editor" className={style.containerEditor}>
 
+                    HTML
                 <div>
-                    Editor HTML
                     <TextIframe handlerHTML={handlerHTML} html={html} cssEdit={false} />
                 </div>
 
+                    CSS
                 <div>
-                    Editor CSS
                     <TextIframe handlerCSS={handlerCSS} css={css} cssEdit={true} jsEdit={false}/>
                 </div>
 
+                    JS
                 <div>
-                    Editor JS
                     <TextIframe handlerJS={handlerJS} js={js} cssEdit={true} jsEdit={true}/>
                 </div>
             </div>
