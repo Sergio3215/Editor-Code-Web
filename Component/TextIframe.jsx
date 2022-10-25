@@ -1,4 +1,4 @@
-import style from './style.module.css';
+import style from '../components/style.module.css';
 
 export default function TextIframe(props) {
 
