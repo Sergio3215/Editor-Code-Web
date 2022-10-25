@@ -1,4 +1,4 @@
-import ContainerFrame from "../components/ContainerEditor";
+import ContainerFrame from "../Component/ContainerEditor";
 
 export default function App(){
 
