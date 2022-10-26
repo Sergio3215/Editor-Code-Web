@@ -1,7 +1,7 @@
 import { useState } from "react";
 import IFrameContext from "./IFrameContext";
 import TextIframe from "./TextIframe";
-import style from '../components/style.module.css'
+import style from '../components/GeneralChangesStyle.module.css'
 
 export default function ContainerFrame() {
 

@@ -1,4 +1,4 @@
-import style  from '../components/style.module.css';
+import style  from '../components/GeneralChangesStyle.module.css';
 
 export default function IFrameContext(props){
     return(
